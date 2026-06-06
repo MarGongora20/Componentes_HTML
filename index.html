@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Task Manager, Maria Gongora </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="titulo" style="text-align: center;"> ORGANIZA TU DÍA </h1>
+    <br>
+    <div>
+        <div class="bloques">
+            <h2> Organizador </h2>
+            <p> Escriba la tarea que desea agregar, seleccione una categoria y presione el boton "agregar"</p>
+            <br>
+            <input type="text" id="input">
+            <select name="Categoria" id="seleccion">
+                <option value="Trabajo 💼">Trabajo</option>
+                <option value="Estudio 📚">Estudio</option>
+                <option value="Personal 🏠">Personal</option>
+                <option value="Urgente 🚨">Urgente</option>
+                <option value="Otro">Otro</option>
+            </select>
+            <input type="text" id="otro" placeholder="Ejemplo: hobbys..." style="display: none;">
+            <br>
+            <span id="error" style="color: rgb(255, 0, 0);"></span>
+            <br>
+            <button type="button" id="agregar">agregar</button>
+        </div>
+
+
+        <div id="bloque1">
+            <h2> Tareas pendientes </h2>
+            <div id="subBloque1">
+
+            </div>
+
+        </div>
+
+
+        <div id="bloque2">
+            <h2> Asi vamos!! </h2>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
