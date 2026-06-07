@@ -23,6 +23,7 @@ boton.addEventListener("click",function () {
     listado.push(tareaNueva)
 
     mostrar()
+    conteo()
 })
 
 cate.addEventListener("change",function () {
@@ -40,7 +41,13 @@ function mostrar() {
     tareas.innerHTML = ""
     
     listado.forEach(function (tareaNueva) {
-        tareas.innerHTML += `<p>${tareaNueva.tarea} - ${tareaNueva.categoria}</p>`    
-    })
-    
+        tareas.innerHTML += `<p>${tareaNueva.tarea} - ${tareaNueva.categoria}<input type="checkbox" id"marcado" onchange="conteo()"></p>`    
+    })   
+}
+
+function conteo() {
+    let marcados = document.querySelectorAll("input[type='checkbox']:checked").length
+    let total = listado.length
+    document.getElementById("contador").textContent = marcados
+    document.getElementById("numero").textContent = total
 }
