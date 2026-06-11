@@ -1,8 +1,9 @@
 body{
-    background-image: url("Fondo.jfif");
+    background-image: url("Fondo.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 .contenedor{
     display: grid;
@@ -13,69 +14,74 @@ body{
     color: #ffffff;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 60px;
-    -webkit-text-stroke: 3px rgb(7, 53, 3);
+    -webkit-text-stroke: 3px rgb(150, 7, 66);
 }
 #agregar{
     font-family: cursive;
     font-size: 20px;
-    color: rgb(7, 53, 3);
-    border: 1px solid rgb(7, 53, 3);
-    background-color: rgb(190, 255, 177);
+    color: rgb(150, 7, 66);
+    border: 1px solid rgb(150, 7, 66);
+    background-color: rgb(255, 255, 255);
+    display: block;
+    margin-left: auto;
+    border-radius: 10px;
+    width: 150px;
+    height: 45px;
 }
 #seleccion{
     font-family: cursive;
     font-size: 20px;
-    color: rgb(7, 53, 3);
-    border: 1px solid rgb(7, 53, 3);
-    background-color: rgb(190, 255, 177);
+    color: rgb(150, 7, 66);
+    border: 1px solid rgb(150, 7, 66);
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    width: 200px;
+    height: 50px;
 }
 .bloques{
     grid-column: 1/3;
     margin: 12px;
-    border: 2px solid rgb(7, 53, 3);
     padding: 10px;
-    color: #ffffff;
+    color: rgb(107, 5, 48);
     font-family: cursive;
     font-size: 20px;
-    background-color: rgba(85, 4, 4, 0.336);
+    background-color: rgba(255, 255, 255, 0.61);
     border-radius: 8px;
 }
 .bloque1{
     margin: 12px;
-    border: 2px solid rgb(7, 53, 3);
     padding: 10px;
-    color: #ffffff;
+    color: rgb(107, 5, 48);
     font-family: cursive;
     font-size: 20px;
-    background-color: rgba(85, 4, 4, 0.336);
+    background-color: rgba(255, 255, 255, 0.61);
     border-radius: 8px;
 }
 .bloque2{
     margin: 12px;
-    border: 2px solid rgb(7, 53, 3);
     padding: 10px;
-    color: #ffffff;
+    color: rgb(107, 5, 48);
     font-family: cursive;
     font-size: 20px;
-    background-color: rgba(85, 4, 4, 0.336);
+    background-color: rgba(255, 255, 255, 0.61);
     border-radius: 8px;
 }
 #input{
   width: 1000px;
-  height: 48px;
+  height: 50px;
   font-size: 16px;
   padding: 0 16px;
-  border: 1px solid rgb(7, 53, 3);
-  background-color: rgb(190, 255, 177);
+  border: 1px solid rgb(150, 7, 66);
+  background-color: rgb(255, 255, 255);
   border-radius: 8px;
 }
 #otro{
   width: 300px;
-  height: 48px;
+  height: 50px;
   font-size: 16px;
   padding: 0 16px;
-  border: 1px solid rgb(7, 53, 3);
-  background-color: rgb(190, 255, 177);
+  border: 1px solid rgb(150, 7, 66);
+  background-color: rgb(255, 255, 255);
   border-radius: 8px;
 }
 
